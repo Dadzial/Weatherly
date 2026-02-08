@@ -1,10 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const WelcomeScreenStyles = StyleSheet.create({
-    background: {
-        resizeMode: 'cover',
-
-    },
+const WelcomeScreenStyle = StyleSheet.create({
     titleContainer: {
         justifyContent: 'space-between',
         marginTop: 120,
@@ -18,13 +14,7 @@ const WelcomeScreenStyles = StyleSheet.create({
         textShadowOffset: { width: 2, height: 2 },
         textShadowRadius: 3,
     },
-    cityInputContainer: {
-        paddingHorizontal: 20,
-        width: '100%',
-        alignItems: 'center',
-    },
     cityInput: {
-        width: '100%',
         height: 50,
         backgroundColor: '#F7C77E',
         color: '#003366',
@@ -37,17 +27,28 @@ const WelcomeScreenStyles = StyleSheet.create({
     searchButton: {
         backgroundColor: '#F7C77E',
         paddingVertical: 12,
-        paddingHorizontal: 15,
+        paddingHorizontal: 12,
         marginLeft: 10,
-        height:50,
+        height: 50,
         borderRadius: 8,
         justifyContent: 'center',
         alignItems: 'center',
     },
     searchButtonText: {
         color: '#003366',
-        fontWeight: 'bold',
-    }
+        fontWeight: 800,
+        fontSize: 12,
+    },
+    landscapeInput: {
+        flex: 1,
+        marginRight: 10,
+        maxWidth: '50%',
+    },
+    landscapeButton: {
+        paddingHorizontal: 20,
+        minWidth: 80,
+        width: '25%',
+    },
 });
 
-export default WelcomeScreenStyles;
+export default WelcomeScreenStyle;
